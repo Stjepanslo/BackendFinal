@@ -15,7 +15,9 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "http://localhost:5173",
-    "https://parcial2-aplicaciones-hibridas2026.vercel.app"
+    "https://parcial2-aplicaciones-hibridas2026.vercel.app",
+    "https://parcial2-aplicaciones-hibridas2-git-e84301-stjepanslos-projects.vercel.app/",
+    "https://parcial2-aplicaciones-hibridas2026-3x2w265ve.vercel.app/"
   ],
   credentials: true
 }))
