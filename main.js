@@ -10,7 +10,11 @@ import usuariosRoutesApi from "./api/routes/usuarios.routes.js"
 dotenv.config()
 
 const app = express()
-
+app.use(cors({
+  origin: "*",
+  credentials: false
+}))
+/*
 app.use(cors({
   origin: [
     "http://localhost:3000",
@@ -21,6 +25,7 @@ app.use(cors({
   ],
   credentials: true
 }))
+*/
 app.use("/", express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
